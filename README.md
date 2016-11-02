@@ -15,8 +15,7 @@
 Cloning the project:
 
 ```console
-$ git clone git@github.com:projectblacklight/spotlight_day_demo.git # preferred, or:
-# $ git clone https://github.com/projectblacklight/spotlight_day_demo.git # or:
+$ git clone https://github.com/projectblacklight/spotlight_day_demo.git # preferred, or:
 # download https://github.com/projectblacklight/spotlight_day_demo/archive/master.zip
 
 $ cd spotlight_day_demo
