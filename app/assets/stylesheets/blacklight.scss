@@ -1,5 +1,11 @@
+$logo_image: image_path('uolib.png');
+
 @import 'bootstrap-sprockets';
 
 @import 'bootstrap';
 
 @import 'blacklight/blacklight';
+
+.navbar-brand {
+  width: 250px !important;
+}
