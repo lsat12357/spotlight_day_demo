@@ -17,3 +17,8 @@
 /tmp
 
 /public/uploads
+
+*.DS_Store
+.java-version
+.ruby-version
+solr/instance

@@ -2,6 +2,10 @@
 # port: 8983
 collection:
   dir: solr/config
-  name: spotlight_day_demo
+#  name: spotlight_day_demo
   
-instance_directory: tmp/solr
+instance_dir: 'solr/instance/solr'
+download_dir: 'solr/instance'
+port: '8991'
+persist: true
+
