@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'bootswatch-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -50,8 +52,8 @@ group :development do
 end
 
 
-gem 'blacklight', ' ~> 6.0'
-gem 'blacklight-spotlight', github: 'projectblacklight/spotlight'
+gem 'blacklight', '6.4.2'
+gem 'blacklight-spotlight', '0.30.0', :ref => '4f809fe', :git => 'https://github.com/projectblacklight/spotlight.git'
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
 end
@@ -60,7 +62,7 @@ gem 'rsolr', '~> 1.0'
 gem 'devise'
 gem 'devise-guests', '~> 0.5'
 gem 'friendly_id'
-gem 'riiif', '~> 0.4.0'
+gem 'riiif', '~> 1.0'
 gem 'sitemap_generator'
 gem 'blacklight-gallery', '>= 0.3.0'
 gem 'blacklight-oembed', '>= 0.1.0'
