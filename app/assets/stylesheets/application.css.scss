@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import 'variables';
+
+@import 'bootstrap-sprockets';
+
+@import 'bootstrap';
+
+@import 'blacklight/blacklight';
