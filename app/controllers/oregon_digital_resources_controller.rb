@@ -5,21 +5,22 @@ class OregonDigitalResourcesController < ApplicationController
     if @resource.save_and_index
       redirect_to spotlight.admin_exhibit_catalog_path(current_exhibit)
     else
-      render 'edit'
+      flash[:notice] = @resource.errors[:base]
+      redirect_to spotlight.admin_exhibit_catalog_path(current_exhibit)
     end
   end
 
   private
 
-    def build_resource
-      @resource = begin
-                    r = OregonDigitalResource.new(resource_params)
-                    r.exhibit = current_exhibit
-                    r
-                  end
+  def build_resource
+    @resource = begin
+      r = OregonDigitalResource.new(resource_params)
+      r.exhibit = current_exhibit
+      r
     end
+  end
 
-    def resource_params
-      params.require(:oregon_digital_resource).permit(:url)
-    end
+  def resource_params
+    params.require(:oregon_digital_resource).permit(:url)
+  end
 end
