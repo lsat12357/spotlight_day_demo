@@ -82,8 +82,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :exhibits, only: [] do
-    resources :dpla_resources, only: [:create, :update] do
-    end
+    #resources :dpla_resources, only: [:create, :update] do
+    #end
     resources :oregon_digital_resources, only: [:create, :update] do
     end
   end

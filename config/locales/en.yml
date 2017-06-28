@@ -21,10 +21,10 @@
 
 en:
   hello: "Hello world"
-  dpla_resources:
-    form:
-      title: "DPLA Query String"
-      add_item: "Ingest It"
+#  dpla_resources:
+#    form:
+#      title: "DPLA Query String"
+#      add_item: "Ingest It"
 
   oregon_digital_resources:
     form:
